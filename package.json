@@ -1,0 +1,14 @@
+{
+  "name": "ftp-to-azure",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@azure/storage-blob": "^12.2.1",
+    "dotenv": "^8.2.0",
+    "ftp-srv": "^4.3.4"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "closed"
+}

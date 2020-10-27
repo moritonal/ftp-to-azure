@@ -1,0 +1,12 @@
+version: "2"
+services:
+  ftp-to-azure:
+    image: ftp-to-azure
+    env_file:
+      - .env
+    ports:
+        - "21:21"
+        - "20:20"
+        - "30000-30009:30000-30009"
+    environment:
+      PORT: 21
