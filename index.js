@@ -109,8 +109,8 @@ async function Main() {
         }
     })
 
-    app.listen(80, "127.0.0.1", () => {
-        console.log("Listening on 80");
+    app.listen(process.env.HTTP_PORT, "127.0.0.1", () => {
+        console.log(`Listening on ${process.env.HTTP_PORT}`);
     });
 }
 
