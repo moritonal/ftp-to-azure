@@ -101,11 +101,11 @@ async function Main() {
     const app = express();
 
     app.get("/", (req, res) => {
-        if (imageData != null) {
+        if (imageData != null && req.query.password && req.query.password == process.env.HTTP_PASSWORD) {
             res.set("Content-Type", process.env.CONTENT_TYPE)
             res.send(imageData);
         } else {
-            res.send("Hello, World!");
+            res.sendStatus(200);
         }
     })
 
