@@ -109,7 +109,7 @@ async function Main() {
         }
     })
 
-    app.listen(process.env.HTTP_PORT, "127.0.0.1", () => {
+    app.listen(process.env.HTTP_PORT, "0.0.0.0", () => {
         console.log(`Listening on ${process.env.HTTP_PORT}`);
     });
 }
