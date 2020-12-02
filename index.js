@@ -101,8 +101,12 @@ async function Main() {
     const app = express();
 
     app.get("/", (req, res) => {
-        res.set("Content-Type", process.env.CONTENT_TYPE)
-        res.send(imageData);
+        if (imageData != null) {
+            res.set("Content-Type", process.env.CONTENT_TYPE)
+            res.send(imageData);
+        } else {
+            res.send("Hello, World!");
+        }
     })
 
     app.listen(80, "127.0.0.1", () => {
