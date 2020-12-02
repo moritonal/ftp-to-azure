@@ -105,7 +105,9 @@ async function Main() {
         res.send(imageData);
     })
 
-    app.listen(80);
+    app.listen(80, "127.0.0.1", () => {
+        console.log("Listening on 80");
+    });
 }
 
 Main();
