@@ -6,7 +6,9 @@
   "dependencies": {
     "@azure/storage-blob": "^12.2.1",
     "dotenv": "^8.2.0",
-    "ftp-srv": "^4.3.4"
+    "express": "^4.17.1",
+    "ftp-srv": "^4.3.4",
+    "memorystream": "^0.3.1"
   },
   "keywords": [],
   "author": "",
